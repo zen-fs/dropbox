@@ -1,0 +1,17 @@
+name: Continuous Integration
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+    workflow_call:
+    pull_request:
+
+jobs:
+    ci:
+        name: CI
+        uses: zen-fs/core/.github/workflows/ci.yaml@main
+        permissions:
+            contents: read
+            id-token: write

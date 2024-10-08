@@ -1,0 +1,64 @@
+{
+	"name": "@zenfs/dropbox",
+	"version": "0.0.0",
+	"description": "ZenFS Dropbox backend",
+	"main": "dist/index.js",
+	"types": "src/index.ts",
+	"keywords": [
+		"filesystem",
+		"dropbox"
+	],
+	"type": "module",
+	"homepage": "https://github.com/zen-fs/dropbox",
+	"author": "James Prevett <jp@jamespre.dev>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zen-fs/dropbox.git"
+	},
+	"bugs": {
+		"url": "https://github.com/zen-fs/dropbox/issues"
+	},
+	"engines": {
+		"node": ">= 18"
+	},
+	"files": [
+		"dist",
+		"src",
+		"license.md",
+		"tsconfig.json"
+	],
+	"exports": {
+		".": "./dist/index.js",
+		"./*": "./dist/*"
+	},
+	"scripts": {
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"lint": "eslint src",
+		"build": "npx build --package=@zenfs/core --globalName ZenFS_Dropbox --entry src/index.ts",
+		"build:docs": "typedoc --out docs --name 'ZenFS Dropbox' src/index.ts",
+		"test": "#tsx --test --experimental-test-coverage",
+		"prepublishOnly": "npm run build"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.11.1",
+		"@fal-works/esbuild-plugin-global-externals": "^2.1.2",
+		"@stylistic/eslint-plugin": "^2.8.0",
+		"@types/eslint__js": "^8.42.3",
+		"@types/node": "^20.12.7",
+		"esbuild": "^0.24.0",
+		"eslint": "^9.11.1",
+		"prettier": "^3.2.5",
+		"tsx": "^4.19.1",
+		"typedoc": "^0.26.7",
+		"typescript": "^5.4.0",
+		"typescript-eslint": "^8.8.0"
+	},
+	"peerDependencies": {
+		"@zenfs/core": "^1.0.2"
+	},
+	"dependencies": {
+		"utilium": "^0.7.1"
+	}
+}
