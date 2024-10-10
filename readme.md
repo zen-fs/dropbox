@@ -1,6 +1,6 @@
 # ZenFS Dropbox
 
-***Work in progress***
+**_Work in progress_**
 
 > [!IMPORTANT]
 > Please read the [ZenFS core documentation](https://zenfs.dev/core)!
@@ -22,4 +22,4 @@ npm install @zenfs/dropbox
 > For CJS, you can `require` the package.  
 > For a browser environment without support for `type=module` in `script` tags, you can add a `script` tag to your HTML pointing to the `browser.min.js` and use the global `ZenFS_Dropbox` object.
 
-*Work in progress*
+_Work in progress_
