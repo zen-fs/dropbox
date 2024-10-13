@@ -1,6 +1,6 @@
 {
 	"name": "@zenfs/dropbox",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "ZenFS Dropbox backend",
 	"main": "dist/index.js",
 	"types": "src/index.ts",
