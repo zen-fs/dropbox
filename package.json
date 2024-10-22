@@ -2,6 +2,10 @@
 	"name": "@zenfs/dropbox",
 	"version": "0.0.1",
 	"description": "ZenFS Dropbox backend",
+	"funding": {
+		"type": "individual",
+		"url": "https://github.com/sponsors/james-pre"
+	},
 	"main": "dist/index.js",
 	"types": "src/index.ts",
 	"keywords": [
