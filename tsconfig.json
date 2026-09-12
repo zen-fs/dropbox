@@ -9,7 +9,7 @@
 		"declaration": true,
 		"strict": true,
 		"verbatimModuleSyntax": true,
-		"types": ["gapi", "gapi.client.drive-v3"]
+		"types": ["node", "gapi", "gapi.client.drive-v3"]
 	},
 	"include": ["src/**/*.ts"],
 	"exclude": ["node_modules"]
